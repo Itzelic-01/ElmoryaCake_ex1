@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elmorya Cake</title>
+
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="케이크, 클래스, 베이킹, 기념일, 생일, baking, cake, dessert, patisserie, korean"> <!-- [추천] 메인 키워드와 관련된 키워드(랭크에 반영) -->
+        <meta name="description" content="BAKING / CAKE / DESSERT 오너파티셰의가 특별한 레시피를 선보입니다. 베이킹·기념일·케이크·파티셰리·브라이덜샤워·프로포즈"> <!-- [추천] 웹페이지 요약설명 : 잘읽히는 다른 내용의 키워드로 작성하기 -->
+        <meta name="author" content="엘모리아케이크"> <!-- [추천] 웹페이지의 소유자(회사) -->
+        
+		<!-- og(Open Graph) : 웹페이지의 링크가 SNS에서 공유될 때 어떻게 노출되는지 -->
+        <meta property="og:type" content="website"> <!-- 웹페이지 유형 -->
+        <meta property="og:title" content="Elmorya Cake"> <!-- 웹페이지 제목 -->
+        <meta property="og:description" content="BAKING / CAKE / DESSERT 오너파티셰의가 특별한 레시피를 선보입니다. 베이킹·기념일·케이크·파티셰리·브라이덜샤워·프로포즈"> <!-- 웹페이지 설명 -->
+        <meta property="og:image" content="assets/베리주르륵.jpg"> <!-- 공유되어 보이는 웹페이지 썸네일 -->
+        <!--  <meta property="og:url" content=""> 웹페이지 주소 -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Diphylleia&family=Gowun+Batang:wght@700&family=Grandiflora+One&family=Gugi&family=IBM+Plex+Sans+KR:wght@100&family=Nanum+Gothic+Coding:wght@700&family=Nanum+Gothic:wght@800&family=Noto+Sans+KR:wght@100&family=Playfair+Display&family=Stylish&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Diphylleia&family=Gowun+Batang:wght@700&family=Grandiflora+One&family=Gugi&family=IBM+Plex+Sans+KR:wght@100&family=Noto+Sans+KR:wght@100&family=Playfair+Display&family=Stylish&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Diphylleia&family=Grandiflora+One&family=Gugi&family=IBM+Plex+Sans+KR:wght@100&family=Playfair+Display&family=Stylish&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Diphylleia&family=Grandiflora+One&family=IBM+Plex+Sans+KR:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <header>
+        <!-- Top menu -->
+        <div class="navigation w3-container">
+            <nav class="nav-container w3-padding-large w3-animate-top">
+                <div class="mobile-button">
+                    <span onclick="toggleMobileNavigation()">&#9776;</span>
+                </div>
+                <div class="container w3-container">
+                    <div class="links w3-medium">
+                        <a href="#cake" >케이크</a>
+                    </div>
+                    <div class="links w3-medium">
+                        <a href="#class" >클래스</a>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/logo/elmorya_yellow.png">
+                    </div>
+                    <div class="links w3-medium">
+                      <a href="#story" >소개</a>
+                    </div>
+                    <div class="links w3-medium">
+                        <a href="#locate" >위치</a>            
+                    </div>
+                </div>
+                <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+                    <div class="mobile-logo" style="display: inline;">
+                        <img src="assets/logo/vertical_logo.png" href="#cake" class="logo">
+                        <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+                    </div>
+                    <a href="#cake" onclick="toggleMobileNavigation()" class="links">케이크</a>
+                    <a href="#class" onclick="toggleMobileNavigation()" class="links">클래스</a>
+                    <a href="#story" onclick="toggleMobileNavigation()" class="links">소개</a>
+                    <a href="#locate" onclick="toggleMobileNavigation()" class="links">위치</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+        
+    <!-- Cake Section -->
+    <section class="Section1">
+      
+      <div class="stickyBtn">
+        <div class="Btnbox container">
+          <p>엘모리아<br>카톡상담</p>
+          <div class="button" title="Kakao Channel">
+            <a href="https://pf.kakao.com/_eftts">
+              <img src="assets/logo/kakao.svg" alt="카카오톡채널"></img>
+            </a>
+          </div>
+        </div>
+        <div class="Btnbox container">
+          <p>엘모리아<br>인스타그램</p>
+          <div class="button" title="Instagram">
+            <a href="https://www.instagram.com/elmoryacake/">
+              <img src="assets/logo/instagram.jpg" alt="인스타그램"></img>
+            </a>
+          </div>
+        </div>
+        <div class="Btnbox container">
+          <p>엘모리아<br>스토어</p>
+          <div class="button" title="Naver Store">
+            <a href="https://blog.naver.com/elmoryacake">
+              <img src="assets/logo/store.jpg" alt="네이버스토어"></img>
+            </a>
+          </div>
+        </div>
+        <div class="Btnbox container">
+          <p>엘모리아<br>블로그</p>
+          <div class="button" title="Naver Blog">
+            <a href="https://smartstore.naver.com/elmoryacake1004">
+              <img src="assets/logo/blog.jpg" alt="네이버블로그"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Title Box
+      <div class="Titlebox container">
+        <p class="milky">BAKING / CAKE / DESSERT<br>
+          오너파티셰의가 특별한 레시피를 선보입니다.</p>
+      </div> -->
+
+
+      <div class="Main w3-main w3-content" id="cake">
+          <!-- Title Box -->
+        <div class="container">
+          <div class="Titlebox">
+            <p class="milky">BAKING / CAKE / DESSERT<br>
+            오너파티셰의가 특별한 레시피를 선보입니다</p>
+          </div>
+        </div>
+        <!-- First Photo Grid-->
+        <div class="Photogrid w3-mobile w3-row-padding">
+            <div class="card w3-border">
+                <img src="assets/베리주르륵.jpg" alt="Cake1" href="#">
+                <div class="content">
+                  <a href="#">
+                    <span class="title w3-large">
+                        베리주르륵
+                    </span>
+                  </a>
+              
+                  <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                  </p>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/아임파인망고.jpg" alt="Cake2" href="#">
+                <div class="content">
+                  <a href="#">
+                    <span class="title border-1 w3-large">
+                        아임파인망고
+                    </span>
+                  </a>
+                  <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                  </p>
+                  </a>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/크레이프케이크.jpg" alt="Cake3" href="#">
+                <div class="content">
+                  <a href="#">
+                    <span class="title w3-large">
+                        크레이프케이크
+                    </span>
+                  </a>
+              
+                  <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                  </p>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/말차생크림.jpg" alt="Cake4" href="#">
+                <div class="content">
+                  <a href="#">
+                    <span class="title w3-large">
+                        말차생크림
+                    </span>
+                  </a>
+              
+                  <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                  </p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Photo Grid-->
+        <div class="Photogrid w3-mobile w3-row-padding w3-animate-opacity" id="cake">
+            <div class="card w3-border">
+                <img src="assets/어버이날카네이션케이크.jpg" alt="Cake5" href="#">
+                 <div class="content">
+                   <a href="#">
+                     <span class="title w3-large">
+                        어버이날카네이션
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                   </p>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/티아라화이트.jpg" alt="Cake6" href="#">
+                 <div class="content">
+                   <a href="#">
+                     <span class="title w3-large">
+                        티아라화이트
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                   </p>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/크리스마스트리.jpg" alt="Cake7" href="#">
+                 <div class="content">
+                   <a href="#">
+                     <span class="title w3-large">
+                        크리스마스트리
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                   </p>
+                </div>
+            </div>
+            <div class="card w3-border">
+                <img src="assets/베리벨벳.jpg" alt="Cake8" href="#">
+                 <div class="content">
+                   <a href="#">
+                     <span class="title w3-large">
+                        베리벨벳
+                     </span>
+                   </a>
+               
+                   <p class="desc">
+                    Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                   </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="Biglogo container w3-animate-left">
+            <img src="assets/logo/vertical_logo.png">
+        </div>
+        <hr id="story">
+        <div class="w3-container w3-padding-32">  
+            <div class="grid-container">
+                <img src="assets/story.jpeg" alt="Me" class="w3-image grid-item" style="display:block;margin:auto" width="600" height="533">
+                <div class="grid-item">
+                    <h4><b>Welcome</b></h4><br>
+                    <h6><i>엘모리아 케이크의 파티셰리입니다</i></h6>
+                    <p style="font-size:17px">어려서부터 허약한 체질이어서 음식에 대한 알러지와<br>
+                        반응도가 민감한 아이로 자랐습니다.<br>
+                        그런 저에게는 감사하게도 음식솜씨가 좋은 어머님이 계셨습니다.<br>
+                        매일 좋은 식재료로 당일 만든 음식으로 식사를 차려주셨거든요.<br>
+                        어머니께서는 음식의 맛뿐만이 아니라 정갈하고 예쁘게 만드시는<br>
+                        분이었습니다.<br>
+                         <br>
+                        어떤 음식을 만들던 맛도 중요하지만  예쁘고 정갈해야 한다고<br>
+                        항상 말씀하셨습니다.<br>
+                        그래서 일까요?<br>
+                        맛과 디자인도 포기 못하고 집착하는 저를 보며 어머니의 조기 교육이<br>
+                        무섭구나 하며 웃을때가 종종 있습니다.<br>
+                         <br>
+                        어머니의 유전자와 식재료의 경험을 바탕으로 지금은 파티쉐의 길을 걷고 있습니다.<br>
+                        <br>
+                        저는 이론을 중요하게 생각합니다.<br>
+                        기초적인 이론만으로도 제품의 완성도가 달라지게 되며<br>
+                        또한, 제품응용과 변형이 가능합니다.<br>
+                        체계적인 이론과 원리를 개인의 실력에 맞게 지도합니다.<br>
+                        <br>
+                        1949년 후쿠오카시(福岡市)에서 창립한 나카무라 조리제과전문학교는<br>2009년 서울에 분교를 열고 본교 수준의 체계적인 커리큘럼과 실습 과정을 통해 수많은 전문 파티시에를 양성해 왔습니다.<br>
+                        엘모리아케이크의 오너파티셰는 6개월간의 수련과정을 거쳐 나카무라 아카데미 서울 분교의 제과 과정을 차석으로 수료했습니다.</p>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Made with <span class="text-success">TeamForest</span></a></p>
+        </div>
+        
+        <div class="w3-third">
+            <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Lorem</span><br>
+                <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+                <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Ipsum</span><br>
+                <span>Praes tinci sed</span>
+            </li> 
+            </ul>
+        </div>
+    
+        <div class="w3-third w3-serif">
+            <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+            <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5, // 특정 요소의 50% 이상이 보일 때 애니메이션을 실행
+      };
+
+      // Intersection Observer API를 이용하여 감시 대상 요소 확인
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          // 요소가 화면에 보이면 애니메이션 클래스 추가
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-section');
+          }
+        });
+      }, observerOptions);
+
+      // 각 섹션을 관찰 대상으로 설정
+      const sections = document.querySelectorAll('.section');
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      function toggleMobileNavigation() {
+          const mobileNavigation = document.getElementById("mobile-sidenav");
+          mobileNavigation.classList.toggle('mobile-links-active');
+      }
+    </script>
+    
+  </body>
+</html>
+    
