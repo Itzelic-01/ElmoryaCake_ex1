@@ -509,7 +509,11 @@ footer {
     width: 100%;
     height: auto;
     background-color: #f6cc88;
-    font-family: 'Diphylleia', serif;
+    display: flex;
+}
+
+.Foottag p {
+  align-items: center;
 }
 
 /* 반응형 요소 지정*/
