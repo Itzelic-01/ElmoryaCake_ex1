@@ -501,7 +501,6 @@ section {
   word-break: keep-all;
   word-wrap: break-word;
   text-align: justify;
-  word-break: break-all;
   font-size:15px;
 }
 
